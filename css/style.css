@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+header{
+    position: sticky!important;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-3{
+    background: #000;
+    color: #fff;
+}
+.bg-2{
+   /*  background-color: #009CFF; */
+    background-color: #fff;
+    color: #009CFF;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar-nav li a{
+    font-size: 16px;
+}
+.navbar-nav li{
+    margin-left: 8px;
+}
+.navbar-dark{
+    background-color: rgba(0, 0, 0, .5)!important;
+}
+.logo-nav{
+    border-radius: 10%;
+    border: 1px solid #ddd;
+    padding: 3px 5px;
+}
+.nav-item a.nav-link{
+    font-size: 17px;
+}
+.nav-item a.nav-link:hover{
+    color: #ddd!important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#home{
+    position: relative;
+    overflow: hidden;
+}
+.text-img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-img div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text-img h1{
+    font-size: 70px;
+    transform: translateX(-200%);
+}
+.text-img h2{
+    font-size: 50px;
+    transform: translateX(250%);
+}
+.text-img h1,
+.text-img h2{
+    transition: transform 1.3s;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.text-img h2.translate-0,
+.text-img h1.translate-0{
+    transform: translateX(0);
+}
+#home img{
+    height: 100vh;
+    width: 100%;
+}
+#home div{
+    color: #ddd;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ ABOUT ME ~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#about-me div.container > div{
+    padding:30px;
+}
+.content-img-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.img-about-me{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #ddd;
+    border-radius: 5%;
+    position: relative;
+    background-color: #fff;
+}
+.img-about-me::after{
+    content: 'Poner una foto';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-text-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-text-presentacion h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #009CFF;
+}
+.content-text-presentacion h3{
+    font-size: 22px;
+    color: #009CFF;
+}
+.content-text-presentacion p{
+    color: #121212;
+    font-size: 16px;
+}
+.content-text-presentacion button{
+    border-radius: 2px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ MIS SKILLS ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#skills{
+    background-color: #ddd;
+}
+.icon-skill{
+    margin-top: 10px;
+    color: #121212;
+    font-size: 18px;
+}
+.icon-skill > p{
+    transition: transform .2s;
+    margin: 0;
+}
+.icon-skill > p:hover{
+    transform: scale(1.3);
+}
+.icon-skill i{
+    font-size: 20px;
+}
+.icon-skill img{
+    height: 20px;
+}
+.icon-skill img[alt="SQL SERVER"]{
+    height: 35px;
+}
+.skills__h2{
+    position: relative;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 45px;
+    color: #009CFF;
+    letter-spacing: 2px;
+    transition: border .3s;
+}
+.skills__h2::before,
+.skills__h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid #009CFF;
+    transition: left .3s;
+}
+.skills__h2::before{
+    left: 100%;
+    bottom: 0;
+}
+.skills__h2::after{
+    top: 0;
+    left: -100%;
+}
+.skills__h2:hover::before,
+.skills__h2:hover::after{
+    left: 0;
+}
+.skills__h4{
+    font-weight: 600;
+    font-size: 30px;
+    color: #009CFF;
+    border-bottom: #009CFF 2px solid;
+}
+.skills__content-frontEnd,
+.skills__content-backEnd,
+.skills__content-otros{
+    padding: 30px;
+}
+
+@media screen and ( max-width: 764px ){
+    .skills__content-frontEnd,
+    .skills__content-backEnd,
+    .skills__content-otros{
+        padding: 0;
+        padding-top: 18px;
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ PORTFOLIO ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.portfolio__h3{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.content-img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.content-img img{
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#footer{
+    color: #efefef;
+    background-color: #151E21;
+}
+footer h3{
+    text-decoration: underline;
+}
+#content-redes > a{
+    margin-right: 6px;
+}
+#content-redes > a i{
+    font-size: 35px;
+    color: lightskyblue;
+}
+.content-map,
+.content-contact{
+    padding: 10px;
+}
