@@ -36,7 +36,7 @@ a{
     margin-left: 8px;
 }
 .navbar-dark{
-    background-color: rgba(0, 0, 0, .5)!important;
+    background-color: rgba(0, 0, 0, .8)!important;
 }
 .logo-nav{
     border-radius: 10%;
@@ -195,7 +195,7 @@ a{
     position: absolute;
     width: 100%;
     border-bottom: 3px solid #009CFF;
-    transition: left .3s;
+    transition: left .5s;
 }
 .skills__h2::before{
     left: 100%;
@@ -271,4 +271,29 @@ footer h3{
 .content-map,
 .content-contact{
     padding: 10px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* Mobile */
+@media screen and ( max-width: 575px){
+    
+    .text-img div.container{
+        align-items: center;
+    }
+    .text-img h1{
+        font-size: 50px;
+    }
+    .text-img h2{
+        font-size: 35px;
+    }
+    .text-img div h1,
+    .text-img div h2{
+        text-align: center;
+    }
+
 }
