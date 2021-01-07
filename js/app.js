@@ -10,7 +10,6 @@ const posicionDeLasSecciones = {
     "portfolio" : obtenerPosicionPorId('#portfolio'),
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Mostrar h1 y h2 
@@ -33,15 +32,6 @@ function scrollNav() {
     //Agrego el evento click
     links.forEach( (link) => {
         link.addEventListener('click', agregarScroll )
-        link.addEventListener('click', (e) => {
-            const navItems = document.querySelectorAll('.nav-item')
-            navItems.forEach( item => {
-                item.classList.remove('active')
-            })
-
-            const navItem = e.target.parentElement;
-            navItem.classList.add('active')
-        })
     })
 
 }
@@ -60,7 +50,7 @@ function agregarScroll(e) {
 // Activar enlace de la barra de navegacion por posicion de la web
 function activarEnlaceBarraNavegacion(){
 
-    const radioPosicion = 30 // 10 px arriba y abajo
+    const radioPosicion = 50 // 10 px arriba y abajo
     const {home, aboutMe, skills, portfolio} = posicionDeLasSecciones
     const posicionActualVentana = window.scrollY
     

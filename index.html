@@ -62,7 +62,7 @@
     <main>
 
         <!-- HOME -->
-        <section id="home" class="bg-1">
+        <section id="home">
             <img src="img/home.jpg" alt="imagen de código" class="img-fluid">
 
             <div class="text-img">
@@ -77,7 +77,7 @@
 
         <!-- ABOUT ME -->
         <section id="about-me" class="py-4">
-            <div class="container row mx-auto my-5">
+            <div class="container row mx-auto my-3">
 
                 <!-- IMG DE PRESENTACION -->
                 <div class="col-md-4 content-img-presentacion">
@@ -86,10 +86,12 @@
                 </div>
                 <!-- Sobre mi -->
                 <div class="col-md-8 content-text-presentacion">
-                    <h2 class="text-center text-md-left">Sobre mi</h2>
+                    <div class="mx-auto mx-md-0 d-flex">
+                        <h2 class="title-h2">Sobre mi</h2>
+                    </div>
                     <h3 class="m-0 text-center text-md-left">Analista de sistemas</h3>
                     <hr class="m-0 mb-3">
-                    <p class="text-dark text-center text-md-left">
+                    <p class="text-center text-md-left">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatum nemo nihil sequi ea
                         suscipit, ipsum mollitia, neque culpa ducimus ab! Tempore qui at impedit vitae porro recusandae,
                         sed sequi.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatum nemo
@@ -107,10 +109,11 @@
 
         <!-- SKILLS -->
         <section id="skills" class="py-4">
-            <div class="container row mx-auto my-5">
+            <div class="container row mx-auto my-3">
 
+                <!-- Titulo -->
                 <div class="col-12 d-flex justify-content-center">
-                    <h2 class="mb-3 skills__h2">Mis Skills</h2>
+                    <h2 class="mb-3 skills__h2 title-h2">Mis Skills</h2>
                 </div>
 
                 <!-- FRONT END -->
@@ -218,77 +221,227 @@
 
         <!-- PORTFOLIO -->
         <section id="portfolio" class="py-4">
-            <div class="container row mx-auto my-5">
-                <div class="col-12">
-                    <h3 class="text-center portfolio__h3">Portafolio</h3>
+            <div class="container row mx-auto">
+
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 class="title-h2 text-center">Mi Portfolio</h2>
                 </div>
 
-                <div class="content-proyects col-12 row text-center mx-auto">
-                    <div class="content-img col-12 col-md-6 col-lg-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHa8bzVgxn0t0NbwruVPxMbZQ6yxXvRZVHrw&usqp=CAU"
-                            alt="" class="img-fluid h-100">
+                <!-- PROYECTO 1 -->
+                <article class="py-4 col-12">
+
+                    <div class="row mx-auto py-3">
+
+                        <!-- titulo -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left " id="portfolio__content-text1">
+                            <h3 class=" title-h3">Tienda con carrito</h3>
+                            <h4>Back-end</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
+                                magnam
+                                veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
+                                animi
+                                quaerat in rerum hic? Molestias eaque maiores deleniti eveniet quis ratione</p>
+                            <button class="btn btn-primary">CODIGO DEL PROYECTO</button>
+                        </div>
+
+                        <!-- CARROUSEL -->
+                        <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-8 " data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/plantilla-web-restaurante-hamburguesas_23-2148485059.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/coleccion-plantillas-pagina-web-comida-hindu_23-2148182633.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YcSyA8uS6gATGYAO1Xnexzj5-azokZO1Cg&usqp=CAU"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="content-img col-12 col-md-6 col-lg-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHa8bzVgxn0t0NbwruVPxMbZQ6yxXvRZVHrw&usqp=CAU"
-                            alt="" class="img-fluid h-100">
+                </article>
+
+                <!-- PROYECTO 2 -->
+                <article class="py-4 col-12">
+
+                    <div class="row mx-auto py-3 d-flex flex-wrap">
+
+                        <!-- CARROUSEL -->
+                        <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-8 order-2 order-lg-1"
+                            data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/plantilla-web-restaurante-hamburguesas_23-2148485059.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/coleccion-plantillas-pagina-web-comida-hindu_23-2148182633.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YcSyA8uS6gATGYAO1Xnexzj5-azokZO1Cg&usqp=CAU"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- titulo -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 order-1 order-lg-2 text-center text-md-left text-lg-right " id="portfolio__content-text2">
+                            <h3 class=" title-h3">Datos Covid-19</h3>
+                            <h4>Front-end</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
+                                magnam
+                                veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
+                                animi
+                                quaerat in rerum hic? Molestias eaque maiores deleniti eveniet quis ratione</p>
+                            <button class="btn btn-primary">CODIGO DEL PROYECTO</button>
+                        </div>
+
                     </div>
 
-                    <div class="content-img col-12 col-md-6 col-lg-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHa8bzVgxn0t0NbwruVPxMbZQ6yxXvRZVHrw&usqp=CAU"
-                            alt="" class="img-fluid h-100">
+                </article>
+
+                <!-- PROYECTO 3 -->
+                <article class="py-4 col-12">
+
+                    <div class="row mx-auto py-3">
+
+                        <!-- titulo -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left " id="portfolio__content-text3">
+                            <h3 class=" title-h3">Pendiente JavaScript</h3>
+                            <h4>Front-end</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
+                                magnam
+                                veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
+                                animi
+                                quaerat in rerum hic? Molestias eaque maiores deleniti eveniet quis ratione</p>
+                            <button class="btn btn-primary">CODIGO DEL PROYECTO</button>
+                        </div>
+
+                        <!-- CARROUSEL -->
+                        <div id="carouselExampleCaptions" class="carousel slide col-12 col-lg-8 " data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/plantilla-web-restaurante-hamburguesas_23-2148485059.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://image.freepik.com/psd-gratis/coleccion-plantillas-pagina-web-comida-hindu_23-2148182633.jpg"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item" data-interval="3000">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YcSyA8uS6gATGYAO1Xnexzj5-azokZO1Cg&usqp=CAU"
+                                        class="d-block w-100 img-fluid" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="content-img col-12 col-md-6 col-lg-3">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHa8bzVgxn0t0NbwruVPxMbZQ6yxXvRZVHrw&usqp=CAU"
-                            alt="" class="img-fluid h-100">
-                    </div>
-                </div>
+                </article>
             </div>
         </section>
-        <!-- FIN PORTFOLIO -->
-
-
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark pt-3" id="footer">
+    <footer class="bg-dark py-3" id="footer">
         <div class="container">
             <div class="row">
-                <!-- Google Map -->
-                <div class="col-md-6 bg-primary content-map">
-                    <h3>Ubicación</h3>
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.68168877432!2d-58.573383207134555!3d-34.615743688997895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1609785015356!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-                </div>
-
-                <!-- Contact -->
-                <div class="col-md-6 content-contact">
-                    <h3>Datos de contacto</h3>
-                    <p>
-                        <i class="fas fa-mobile-alt mr-2"></i>(WhatsApp) +54 (011) 15-6555-9044
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        saul_zarate.m@hotmail.com
-                    </p>
-
-                    <h3>Redes sociales</h3>
-                    <div id="content-redes">
-                        <a href="">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-instagram-square"></i>
-                        </a>
-                    </div>
-                </div>
+                <!-- Contacto -->
 
                 <div class="col-12 text-center content-autor">
-                    <p class="m-0 py-3">Desarrollado por Saul Zarate | Copyright&reg;
+                    <p class="m-0 p-0">Desarrollado por Saul Zarate | Copyright&reg;
                         2021</p>
                 </div>
             </div>

@@ -8,24 +8,34 @@
 header{
     position: sticky!important;
 }
-
 li{
     list-style:none;
 }
-
 a{
     text-decoration: none;
 }
 
-.bg-3{
-    background: #000;
-    color: #fff;
-}
-.bg-2{
-   /*  background-color: #009CFF; */
-    background-color: #fff;
+.title-h2{
+    font-size: 40px;
+    letter-spacing: 2px;
     color: #009CFF;
+    font-weight: 600;
+    border-bottom: 4px solid #009CFF;
 }
+.title-h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #009CFF;
+    font-weight: 600;
+}
+p{
+    font-size: 17px;
+}
+
+.btn-primary {
+    border-radius: 2px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -136,21 +146,12 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-.content-text-presentacion h2{
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: #009CFF;
-}
 .content-text-presentacion h3{
     font-size: 22px;
     color: #009CFF;
 }
 .content-text-presentacion p{
     color: #121212;
-    font-size: 16px;
-}
-.content-text-presentacion button{
-    border-radius: 2px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -165,7 +166,7 @@ a{
     font-size: 18px;
 }
 .icon-skill > p{
-    transition: transform .2s;
+    transition: transform .3s;
     margin: 0;
 }
 .icon-skill > p:hover{
@@ -181,15 +182,11 @@ a{
     height: 35px;
 }
 .skills__h2{
-    position: relative;
-    font-weight: 600;
     overflow: hidden;
-    font-size: 45px;
-    color: #009CFF;
-    letter-spacing: 2px;
-    transition: border .3s;
+    /* position: relative;
+    transition: border .3s; */
 }
-.skills__h2::before,
+/* .skills__h2::before,
 .skills__h2::after{
     content: '';
     position: absolute;
@@ -208,17 +205,17 @@ a{
 .skills__h2:hover::before,
 .skills__h2:hover::after{
     left: 0;
-}
+} */
 .skills__h4{
     font-weight: 600;
     font-size: 30px;
     color: #009CFF;
-    border-bottom: #009CFF 2px solid;
+    /* border-bottom: #009CFF 2px solid; */
 }
 .skills__content-frontEnd,
 .skills__content-backEnd,
 .skills__content-otros{
-    padding: 30px;
+    padding: 30px 0;
 }
 
 @media screen and ( max-width: 764px ){
@@ -248,8 +245,17 @@ a{
     border-radius: 5px;
     border: 1px solid #ddd;
 }
-
-
+.portfolio__content-carrousel{
+    margin: 30px 0;
+}
+#portfolio__content-text1,
+#portfolio__content-text2,
+#portfolio__content-text3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -282,6 +288,12 @@ footer h3{
 /* Mobile */
 @media screen and ( max-width: 575px){
     
+    #collapsibleNavId{
+        text-align: center;
+    }
+    /* ---------------------- */
+    /* -------- HOME -------- */
+    /* ---------------------- */
     .text-img div.container{
         align-items: center;
     }
