@@ -80,17 +80,21 @@
             <div class="container row mx-auto my-3">
 
                 <!-- IMG DE PRESENTACION -->
-                <div class="col-md-4 content-img-presentacion">
+                <div class="col-md-5 col-lg-4 content-img-presentacion">
                     <div class="img-about-me"></div>
                     <!-- <img src="" alt="" class="img-fluid"> -->
                 </div>
                 <!-- Sobre mi -->
-                <div class="col-md-8 content-text-presentacion">
+                <div class="col-md-7 col-lg-8 content-text-presentacion">
                     <div class="mx-auto mx-md-0 d-flex">
                         <h2 class="title-h2">Sobre mi</h2>
                     </div>
                     <h3 class="m-0 text-center text-md-left">Analista de sistemas</h3>
-                    <hr class="m-0 mb-3">
+
+                    <div class="about-me__content-separador mb-3">
+                        <hr class="m-0">
+                    </div>
+
                     <p class="text-center text-md-left">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid voluptatum nemo nihil sequi ea
                         suscipit, ipsum mollitia, neque culpa ducimus ab! Tempore qui at impedit vitae porro recusandae,
@@ -120,7 +124,7 @@
                 <div class="col-md-4 text-center skills__content-frontEnd">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <h4 class="skills__h4">Front end</h4>
+                            <h4 class="skills__h3 title-h3">Front end</h4>
                         </div>
                         <div class="col-12">
                             <ul class="row">
@@ -157,7 +161,7 @@
                 <div class="col-md-4 text-center skills__content-backEnd">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <h4 class="skills__h4">Back end</h4>
+                            <h4 class="skills__h3 title-h3">Back end</h4>
                         </div>
                         <div class="col-12">
                             <ul class="row">
@@ -194,7 +198,7 @@
                 <div class="col-md-4 text-center skills__content-otros">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <h4 class="skills__h4">Otros</h4>
+                            <h4 class="skills__h3 title-h3">Otros</h4>
                         </div>
                         <div class="col-12">
                             <ul class="row">
@@ -229,14 +233,15 @@
                 </div>
 
                 <!-- PROYECTO 1 -->
-                <article class="py-4 col-12">
+                <article class="pb-4 py-md-4 col-12">
 
                     <div class="row mx-auto py-3">
 
-                        <!-- titulo -->
-                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left " id="portfolio__content-text1">
+                        <!-- Contenido del texto -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left "
+                            id="portfolio__content-text1">
                             <h3 class=" title-h3">Tienda con carrito</h3>
-                            <h4>Back-end</h4>
+                            <h4 class="title-h4">PHP | Back-end</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
                                 magnam
                                 veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
@@ -280,13 +285,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselProyecto1" role="button"
-                                data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselProyecto1" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselProyecto1" role="button"
-                                data-slide="next">
+                            <a class="carousel-control-next" href="#carouselProyecto1" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -296,18 +299,13 @@
                 </article>
 
                 <!-- PROYECTO 2 -->
-                <article class="py-4 col-12">
+                <article class="pb-4 py-md-4 col-12">
 
                     <div class="row mx-auto py-3 d-flex flex-wrap">
 
                         <!-- CARROUSEL -->
                         <div id="carouselProyecto2" class="carousel slide col-12 col-lg-8 order-2 order-lg-1"
                             data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselProyecto2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselProyecto2" data-slide-to="1"></li>
-                                <li data-target="#carouselProyecto2" data-slide-to="2"></li>
-                            </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-interval="3000">
                                     <img src="https://image.freepik.com/psd-gratis/plantilla-web-restaurante-hamburguesas_23-2148485059.jpg"
@@ -317,41 +315,14 @@
                                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                     </div>
                                 </div>
-
-                                <div class="carousel-item" data-interval="3000">
-                                    <img src="https://image.freepik.com/psd-gratis/coleccion-plantillas-pagina-web-comida-hindu_23-2148182633.jpg"
-                                        class="d-block w-100 img-fluid" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item" data-interval="3000">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YcSyA8uS6gATGYAO1Xnexzj5-azokZO1Cg&usqp=CAU"
-                                        class="d-block w-100 img-fluid" alt="...">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                    </div>
-                                </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselProyecto2" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselProyecto2" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
 
-                        <!-- titulo -->
-                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 order-1 order-lg-2 text-center text-md-left text-lg-right " id="portfolio__content-text2">
+                        <!-- Contenido del texto -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 order-1 order-lg-2 text-center text-md-left text-lg-right "
+                            id="portfolio__content-text2">
                             <h3 class=" title-h3">Datos Covid-19</h3>
-                            <h4>Front-end</h4>
+                            <h4 class="title-h4">React | Front-end</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
                                 magnam
                                 veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
@@ -365,14 +336,15 @@
                 </article>
 
                 <!-- PROYECTO 3 -->
-                <article class="py-4 col-12">
+                <article class="pb-4 py-md-4 col-12">
 
                     <div class="row mx-auto py-3">
 
-                        <!-- titulo -->
-                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left " id="portfolio__content-text3">
+                        <!-- Contenido del texto -->
+                        <div class="col-12 col-lg-4 pb-4 pb-lg-0 text-center text-md-left "
+                            id="portfolio__content-text3">
                             <h3 class=" title-h3">Pendiente JavaScript</h3>
-                            <h4>Front-end</h4>
+                            <h4 class="title-h4">JavaScript | Front-end</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ex impedit reprehenderit
                                 magnam
                                 veniam sequi dolor quisquam cumque facilis maxime, distinctio maiores eligendi dicta
@@ -416,13 +388,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselProyecto3" role="button"
-                                data-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselProyecto3" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselProyecto3" role="button"
-                                data-slide="next">
+                            <a class="carousel-control-next" href="#carouselProyecto3" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -436,13 +406,29 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark py-3" id="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Contacto -->
+    <footer id="footer">
+        <!-- SECCION CONTACTO -->
+        <div class="footer__content-contacto container row">
+            <div class="col-12 content-contacto__text">
+                <h2 class="display-4">Saul Zarate</h2>
+                <h3>Desarrollador web Full Stack - PHP</h3>
+                <div class="footer__content-redes">
+                    <p class="content-redes__linkedin">Red</p>
+                    <p class="content-redes__github">Red</p>
+                    <p class="content-redes__facebook">Red</p>
+                    <p class="content-redes__instagram">Red</p>
+                </div>
+                <p>Ubicacion: C.A.B.A. - Buenos Aires - Argentina</p>
+                <p>WhatsApp: +54 (011) 15-6555-9044</p>
+                <p>E-mail: saul_zarate.m@hotmail.com</p>
+            </div>
+        </div>
 
-                <div class="col-12 text-center content-autor">
-                    <p class="m-0 p-0">Desarrollado por Saul Zarate | Copyright&reg;
+        <!-- PIE DE PAGINA -->
+        <div class="row m-0 footer__content-piepagina">
+            <div class="col-12 p-0">
+                <div class="footer__content-text">
+                    <p class="m-0 p-0">Desarrollado por Saul Zarate | Copyright &copy;
                         2021</p>
                 </div>
             </div>

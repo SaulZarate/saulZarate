@@ -29,7 +29,7 @@ a{
     font-weight: 600;
 }
 p{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .btn-primary {
@@ -183,34 +183,11 @@ p{
 }
 .skills__h2{
     overflow: hidden;
-    /* position: relative;
-    transition: border .3s; */
 }
-/* .skills__h2::before,
-.skills__h2::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    border-bottom: 3px solid #009CFF;
-    transition: left .5s;
-}
-.skills__h2::before{
-    left: 100%;
-    bottom: 0;
-}
-.skills__h2::after{
-    top: 0;
-    left: -100%;
-}
-.skills__h2:hover::before,
-.skills__h2:hover::after{
-    left: 0;
-} */
 .skills__h4{
     font-weight: 600;
     font-size: 30px;
     color: #009CFF;
-    /* border-bottom: #009CFF 2px solid; */
 }
 .skills__content-frontEnd,
 .skills__content-backEnd,
@@ -218,18 +195,10 @@ p{
     padding: 30px 0;
 }
 
-@media screen and ( max-width: 764px ){
-    .skills__content-frontEnd,
-    .skills__content-backEnd,
-    .skills__content-otros{
-        padding: 0;
-        padding-top: 18px;
-    }
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~ PORTFOLIO ~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .portfolio__h3{
     font-size: 40px;
     font-weight: 400;
@@ -248,6 +217,9 @@ p{
 .portfolio__content-carrousel{
     margin: 30px 0;
 }
+.carousel-inner{
+    border-radius: 3px;
+}
 #portfolio__content-text1,
 #portfolio__content-text2,
 #portfolio__content-text3
@@ -260,34 +232,93 @@ p{
 /* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#footer{
+footer{
+    background-color: rgb(20, 20, 20);
+}
+.footer__content-contacto{
+    margin: auto;
+    padding: 25px 0;
+}
+.content-contacto__text{
     color: #efefef;
-    background-color: #151E21;
+    text-align: center;
 }
-footer h3{
-    text-decoration: underline;
+.content-contacto__text h2{
+    font-size: 40px;
 }
-#content-redes > a{
-    margin-right: 6px;
+.content-contacto__text h3{
+    font-weight: 300;
+    font-size: 25px;
 }
-#content-redes > a i{
-    font-size: 35px;
-    color: lightskyblue;
+.footer__content-redes{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+    padding: 20px 0;
 }
-.content-map,
-.content-contact{
-    padding: 10px;
+.footer__content-redes > p{
+    padding: 8px;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(80, 80, 80);
+    transition: border .3s, 
+                background-color .5s,
+                transform .3s;
+}
+.footer__content-redes > p:hover{
+    border: 1px solid #009CFF;
+    transform: scale(1.2);
 }
 
+.content-redes__linkedin:hover{
+    background-color: #007bb5;
+}
+.content-redes__github:hover{
+    background-color: #171515;
+}
+.content-redes__facebook:hover{
+    background-color: #3b5998;
+}
+.content-redes__instagram:hover{
+    background-color: #125688;
+}
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer__content-text{
+    background: #000;
+    color: rgb(150, 150, 150);
+    padding: 10px 0;
+    text-align: center;
+    border-top: rgb(80, 80, 80) 1px solid;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-/* Mobile */
+/* ---------------- Mobile ---------------- */
 @media screen and ( max-width: 575px){
     
+    .title-h2{
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .title-h3{
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .title-h4{
+        font-size: 19px;
+        font-weight: 500;
+        color: rgb(80, 80, 80);
+    }
+    p{
+        font-size: 15px;
+    }
+
     #collapsibleNavId{
         text-align: center;
     }
@@ -307,5 +338,60 @@ footer h3{
     .text-img div h2{
         text-align: center;
     }
+    /* ---------------------- */
+    /* ------ ABOU-TME ------ */
+    /* ---------------------- */
+    .content-text-presentacion{
+        text-align: center;
+    }
+    .about-me__content-separador{
+        display: flex;
+        justify-content: center;
+    }
+    .about-me__content-separador hr{
+        width: 80%;
+    }
+    /* ---------------------- */
+    /* ------- SKILLS ------- */
+    /* ---------------------- */
+    .icon-skill p{
+        font-size: 16px;
+    }
+    /* ---------------------- */
+    /* ------- FOOTER ------- */
+    /* ---------------------- */
+    
+}/* Fin mobile */
 
-}
+/* ---------------- TABLET ---------------- */
+@media screen and ( max-width: 768px ){
+    .title-h2{
+        font-size: 36px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+    .title-h3{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .title-h4{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(80, 80, 80);
+    }
+    p{
+        font-size: 16px;
+    }
+    
+    /* ---------------------- */
+    /* ------- SKILLS ------- */
+    /* ---------------------- */
+    .skills__content-frontEnd,
+    .skills__content-backEnd,
+    .skills__content-otros{
+        padding: 0;
+        padding-top: 18px;
+    }
+
+}/* Fin Tablet */
