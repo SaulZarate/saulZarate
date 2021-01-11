@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
 header{
@@ -240,11 +239,12 @@ footer{
     padding: 25px 0;
 }
 .content-contacto__text{
-    color: #efefef;
-    text-align: center;
+    color: #c8c8c8;
+    text-align: center; 
 }
 .content-contacto__text h2{
     font-size: 40px;
+    font-weight: 300;
 }
 .content-contacto__text h3{
     font-weight: 300;
@@ -253,7 +253,7 @@ footer{
 .footer__content-redes{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
     margin: auto;
     padding: 20px 0;
 }
@@ -262,12 +262,10 @@ footer{
     margin: 0;
     border-radius: 50%;
     border: 1px solid rgb(80, 80, 80);
-    transition: border .3s, 
-                background-color .5s,
+    transition: background-color .5s,
                 transform .3s;
 }
 .footer__content-redes > p:hover{
-    border: 1px solid #009CFF;
     transform: scale(1.2);
 }
 
@@ -283,7 +281,15 @@ footer{
 .content-redes__instagram:hover{
     background-color: #125688;
 }
-
+.footer__content-redes > p a{
+    color:  rgb(80, 80, 80);
+    padding: 6px;
+    transition: color .3s;
+    font-size: 20px;
+}
+.footer__content-redes > p:hover a{
+    color: #ddd;
+}
 .footer__content-text{
     background: #000;
     color: rgb(150, 150, 150);
@@ -291,13 +297,71 @@ footer{
     text-align: center;
     border-top: rgb(80, 80, 80) 1px solid;
 }
+.content-contacto__text > p span{
+    color: rgb(80,80,80);
+    margin-right: 6px;
+}
+.footer__content-text span{
+    color: #009CFF;
+    font-weight: 500;
+}
+
+
+
+
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ MEDIA QUERY ~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* ---------------------------------------- */
+/* ---------------- TABLET ---------------- */
+/* ---------------------------------------- */
+@media screen and ( max-width: 768px ){
+    .title-h2{
+        font-size: 36px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+    .title-h3{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .title-h4{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(80, 80, 80);
+    }
+    p{
+        font-size: 16px;
+    }
+    
+    /* ---------------------- */
+    /* ------- SKILLS ------- */
+    /* ---------------------- */
+    .skills__content-frontEnd,
+    .skills__content-backEnd,
+    .skills__content-otros{
+        padding: 0;
+        padding-top: 18px;
+    }
+    /* ---------------------- */
+    /* ------- FOOTER ------- */
+    /* ---------------------- */
+    .footer__content-redes{
+        width: 55%;
+    }
 
-/* ---------------- Mobile ---------------- */
+}/* Fin Tablet */
+
+
+
+/* ---------------------------------------- */
+/* ---------------- MOBILE ---------------- */
+/* ---------------------------------------- */
 @media screen and ( max-width: 575px){
     
     .title-h2{
@@ -361,37 +425,42 @@ footer{
     /* ------- FOOTER ------- */
     /* ---------------------- */
     
-}/* Fin mobile */
-
-/* ---------------- TABLET ---------------- */
-@media screen and ( max-width: 768px ){
-    .title-h2{
-        font-size: 36px;
-        letter-spacing: 2px;
-        font-weight: 600;
+    .footer__content-text p{
+        font-size: 13px;
     }
-    .title-h3{
-        font-size: 30px;
-        letter-spacing: 1px;
-        font-weight: 600;
-    }
-    .title-h4{
-        font-size: 20px;
+    .footer__content-text p span{
         font-weight: 500;
-        color: rgb(80, 80, 80);
     }
-    p{
+    h2.contacto__text--h2{
+        font-size: 28px;
+        font-weight: 350;
+    }
+    h3.contacto__text--h3{
+        font-size: 20px;
+    }
+    /* Content redes */
+    div.footer__content-redes{
+        width: 80%;
+    }
+    .footer__content-redes > p a{
         font-size: 16px;
     }
-    
-    /* ---------------------- */
-    /* ------- SKILLS ------- */
-    /* ---------------------- */
-    .skills__content-frontEnd,
-    .skills__content-backEnd,
-    .skills__content-otros{
-        padding: 0;
-        padding-top: 18px;
-    }
 
-}/* Fin Tablet */
+    .content-contacto__text > p{
+        font-size: 14px;
+    }
+    .content-contacto__text > p span{
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    /* .contacto__text--telefono span{
+        color: #4dc247;
+    }
+    .contacto__text--email span{
+        color: #dd4b39;
+    }
+    .contacto__text--ubicacion span{
+        color: #ff3c00;
+    } */
+
+}/* Fin mobile */
